@@ -4,7 +4,7 @@
     <p><%= startingContent %></p>
 
     <% newItems.forEach(function(postItems){ %>
-       <h1> <%= postItems.title %> </h1>
+       <h2> <%= postItems.title %> </h2>
        <p><%= postItems.content.substring(0,100) + "..." %>
     <a href="/posts/<%=postItems._id%>">Read More</a></p>
     <% })%>
